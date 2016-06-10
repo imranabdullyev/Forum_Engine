@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>ForumEngine</title>
+
+       <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="lib/css/prettify.css"></link>
+      <link rel="stylesheet" type="text/css" href="src/bootstrap-wysihtml5.css"></link>
+
+      <!-- Normalise css -->
+      <link rel="stylesheet" href="scss/normalise.css">
+       <!-- Bootstrap css -->
+      <link rel="stylesheet" href="scss/bootstrap.css">
+      <!-- FornAwesome css -->
+      <link rel="stylesheet" href="scss/font-awesome.css">
+        
+       <!-- Style csss-->
+      <link rel="stylesheet" href="scss/responsive.css">
+      <link rel="stylesheet" type="text/css" href="scss/style.css">
+
+     <!--Jquery Script -->     
+       <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+        
+       <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30181385-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      </script>
+     
+      </head>
+      <body>
+
+<!-- NAVBAR -->
+
+
+         <nav class="navbar1 navbar-default ">
+
+                 <div class=" container  ">
+                      <div class="row ">
+
+ <!-- LOGO -->
+                            <div class="col-md-2 logo-header ">
+                                      <a href="" class="logo"><img src="images/logo.png"></a>  
+                            </div>
+<!--- LOGO -->
+
+<!-- SEARCH -->
+                            <div class="col-md-7 col-md-offset-1">
+                                  <form class="navbar-form navbar-left  " role="search">
+                                        <div class="form-group">
+
+                                             <input type="search" id="MySearch" class=" form-control" placeholder="Search...">                              
+                                             <button type="submit" class="btn1 " style="margin: 0 20px;">
+                                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                             </button>    
+                                          </div> 
+                                  </form> 
+                             </div>
+<!-- SEARCH -->  
+
+<!-- LOG IN OR JOIN -->
+                             <div class="col-md-2">
+                                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                  <a data-toggle="modal" data-target="#myModal" class="LogIn waves-effect waves-light modal-trigger" href="#modal1"> Log in or join</a>
+                             </div>      
+
+
+                     <!-- MODAL --> 
+                            
+                              <div class="col-md-12 ">
+                                   <div class="row">  
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog1  modal-dialog" role="document">
+
+                                            
+                                             <div class="modal-content1">
+                                              
+
+                                             <!-- baglama -->
+                                                  <div class="clr">
+                                                     <button type="button" class="close bumi" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i>
+                                                     </button>
+                                                  </div>
+
+                                             <!-- baglama -->
+
+
+                                <!-- ModalContent -->
+
+                                                  <div class="cont"  >
+
+                                             <!--    header    -->
+
+                                                  <div class="modal-header1">      
+                                                       <h4 class="modal-title" id="myModalLabel">Log in or Join</h4>
+                                                  </div>
+
+                                             <!--    header    -->      
+
+                                             <!--  ModalBody  -->
+                                             <div class="row" >
+                                                  <div class="modal-body1">
+                                                               
+                                            <!-- RightForm -->
+                                                  <form class="col-md-6 LeftBorder  ">  
+                                                                 
+                                                      <div class="input-field1 ">  
+                                                           <input id="icon_email" type="tel" class="input validate" placeholder="Enter your username or email" >
+                                                      </div>
+
+                                                       <div class="input-field1">
+                                                           <input id="password" type="password" class="input validate" placeholder="Password" >
+                                                       </div>
+                                                
+                                                      <div class="forgotten-pass">
+                                                            <a href="#">Forgotten password?</a>
+                                                            <button type="button" class="btn1 LoginJoinBtn FloatRight ">Login
+                                                            </button>
+                                                       </div>
+                                                       <p>You can also sign in by:</p>
+                                                              
+                                                  </form>
+                                             <!-- RightForm -->
+
+
+                                             <!-- LeftForm -->
+                                                  <form class="col-md-6 ">
+                                                       <div class="input-field1 ">  
+                                                            <input id="icon_email" type="tel" class="input validate" placeholder="Username" >
+                                                        </div>
+
+                                                        <div class="input-field1">
+                                                             <input id="Email" type="Email" class="input validate" placeholder="Email" >
+                                                       </div>             
+
+                                                       <div class="input-field1">
+                                                            <input id="password" type="password" class="input validate" placeholder="Password" >
+                                                       </div>
+
+                                                        <div class="input-field1">
+                                                             <input id="password-rep" type="password" class="input  validate" placeholder="Retype password">
+                                                        </div>
+
+                                                       <div class="agreement">
+                                                             <input type="checkbox" value=""><span style="padding: 5px;">I agree to <a href="#">the terms.</a></span>
+                                                              
+                                                            <button type="button" class="btn1 FloatRight LoginJoinBtn ">Join 
+                                                            </button>
+                                                       </div>    
+
+                                                  </form>                   
+                                             <!-- LeftForm -->                   
+                                        </div> 
+                                   </div>                    
+                              <!--  ModalBody  -->                          
+                         </div>                               
+                         <!-- ModalContent -->   
+                            </div>
+                           </div>
+                         </div>
+                        </div>
+                      </div> 
+
+     <!-- MODAL -->                         
+
+                                               
+     <!-- LOG IN OR JOIN  -->   
+
+                      </div>
+                 </div>  
+             </div>             
+         </nav>                           
+                                
+                                                         
+<!--NAVBAR1 -->     
+
+
+                                    
+<!-- SecondNav -->
+                      
+         <nav class=" navbar-default navbar2">
+               <div class=" container ">
+                   <div class="row ">
+                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding: 0;">
+
+                           <ul class="nav navbar-nav">
+                               <li  >
+                                     <a href="ForumEngine.html">
+                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                         <span class="text">ALL POSTS</span>
+                                   </a>
+                               </li>
+                               <li >
+                                   <a data-toggle="modal" data-target="#myModal" class="LogIn waves-effect waves-light modal-trigger" href="#modal1">
+                                         <i class="fa fa-plus" aria-hidden="true"></i>
+                                         <span class="text">Following</span>
+                                     </a>
+                                </li>
+                          </ul>
+
+                       </div>
+                 </div>
+             </div>
+         </nav>
+
+<!--  SecondNav -->
+
+
+                                        
+<!--  Container   -->
+
+        <div class="container">
+             <div class="row">
+                  <div class="col-md-12" style="margin-top:30px;" >
+
+<!-- LeftSide -->
+
+                      <div class="col-md-9">
+
+<!-- Input-group -->
+                         
+                         <form action="" method="post">
+
+                            <div class="input-group InputForTopic">
+                          
+                                 <input type="text" class="form-control" placeholder="Click here to start your new topic">   
+                                 <div  id="Please" class="input-group-btn display">
+
+                                      <div class="line"></div>
+                                      <button type="button" id="dLabel" class="ForTopicBtn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="text-select FloatLeft">Please select</span>
+                                            <span class="caret "></span>
+                                      </button>
+                                     
+                                      <ul class="dropdown-menu category-select" aria-labelledby="dLabel" style="padding:10px 25px;">
+                                        <li data-value="localization">Localization</li>
+                                        <li data-value="managing-a-job-posting">Job Posting</li>
+                                        <li data-value="customizing">Customizing</li>
+                                        <li data-value="getting-started">Getting Started</li>
+                                        <li data-value="currencies">Currencies</li>
+                                        <li data-value="transactions">Transactions</li>
+                                        <li data-value="payment-methods">Payment Methods</li>
+                                        <li data-value="extension-guide">Extension Guide</li>
+                                        <li data-value="questions">Questions?</li>
+                                        <li data-value="loremdemo">LoremDemo</li>
+                                        <li data-value="payment-plans">Payment Plans</li>
+                                      </ul>
+
+                                 </div>
+
+                            </div>
+                            </form>
+
+
+                                                           
+                            <div class="hero-unit display" >  
+
+                                 <textarea class=" textarea" ></textarea> 
+                                    <div class="col-md-12">
+                                    <div class="row margin">
+                                       <div class="col-md-6">
+                                            <div class="show-preview" style="margin-top:10px;">                                                 
+                                                 <input type="checkbox" name="show_preview" class="   checkbox-show" id="show_topic_item">
+                                                 <a href="#">Show preview</a>
+                                            </div>                                  
+                                       </div>
+                                       <div class="col-md-6" style="padding: 0px; ">             
+                                             <div class="button-event" style="height: 40px;">
+                                              
+                                               <button type="button" class="btn2 " data-toggle="modal" data-target="#myModal" href="#modal1" type="submit" id="btn-create"  >Login and Create Top
+                                              </button>
+                                              <div class="closer close">
+                                              <button type="button" class=" close bumi2 margin"><i class="fa fa-times" aria-hidden="true"></i>
+                                              </button><span class="cancel" >Cancel</span>
+                                              </div>                                            
+                                            </div>
+                                       </div>
+                                    </div>   
+                                </div>
+
+                            </div>                                             
+        
+
+<!--Input-group -->
+
+
+<!-- Posts -->            
+         
+                   
+<div class="post">        
+<ul id="main_list_post" class="PostList">
+      <li class="Post" data-id="1" data-cat="localization">
+             <div class="col-md-1">
+             <div class="row"> 
+            <input type="hidden" value="localization" class="">              
+            <a href="postPage.html">           
+                  <img src="avatars/1.png"  class="avatar" alt="">             
+            </a>
+       </div>
+       </div>
+       <div class="row"> 
+         <div class="col-md-8">
+        
+                <div class="">   
+                    <h2 class="title">              
+                       <a href="postPage.html">Introducing new packages for DirectoryEngine and FreelanceEngine </a>
+                    </h2>                          
+                 
+                  <div class="post-information">
+                      <span class="times-create">Updated 7 days ago in </span>
+                      <span class="type-category">
+                          <a href=""><span class="flags2 color-5"> </span> Localization</a>
+                      </span>                      
+                      <span class="author"> No reply yet </span>
+                       
+                      <span class="user-action">
+                          <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>                   0
+                          <span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0
+                      </span>
+
+                          <span class="undo-action hide">Want to
+                             <a href="#" class="act-undo">undo</a> ?       
+                          </span>
+
+                       </div> 
+
+                        <div class="control-thread-group">
+
+                              <a href="#" data-toggle="tooltip" title="Sticky" class="sticky-thread ">
+                                <span class="icon" data-icon="S"></span>
+                              </a>
+                              <a href="#" data-toggle="tooltip" title="Sticky Home" class="sticky-thread-home collapse "><span class="icon" data-icon="G"></span>
+                              </a>  
+                              <a href="#" class="close-thread " data-toggle="tooltip" title="Close">
+                                 <span class="icon" data-icon="("></span>
+                              </a>
+                              <a href="#" class="unclose-thread collapse" data-toggle="tooltip" title="Unclose">  <span class="icon" data-icon=")"></span>
+                              </a>
+                              <a href="#" class="delete-thread" data-toggle="tooltip" title="Delete">
+                                 <span class="icon" data-icon="#"></span>
+                            </a>
+                               
+                       </div>
+                  </div>
+                  </div>
+                  </div>
+    
+      </li>
+      
+      <li class="Post" data-id="2" data-cat="localization">
+             <div class="col-md-1">
+             <div class="row"> 
+            <input type="hidden" value="localization" class="">              
+            <a href="postPage.html">           
+                  <img src="avatars/2.png"  class="avatar" alt="">             
+            </a>
+       </div>
+       </div>
+      <div class="row"> 
+        <div class="col-md-8">
+        
+                <div class="">   
+                    <h2 class="title">              
+                       <a href="postPage.html">Other updates: DirectoryEngine, FreelanceEngine and ClassifiedEngine </a>
+                    </h2>                          
+                 
+                  <div class="post-information">
+                      <span class="times-create">Updated 7 days ago in</span>
+                      <span class="type-category">
+                          <a href=""><span class="flags2 color-2"></span> Job Posting</a>
+                      </span>                      
+                      <span class="author"> No reply yet </span>
+                       
+                      <span class="user-action">
+                          <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>                   0
+                          <span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0
+                      </span>
+
+                          <span class="undo-action hide">Want to
+                             <a href="#" class="act-undo">undo</a> ?       
+                          </span>
+
+                       </div> 
+
+                        <div class="control-thread-group">
+
+                              <a href="#" data-toggle="tooltip" title="Sticky" class="sticky-thread ">
+                                <span class="icon" data-icon="S"></span>
+                              </a>
+                              <a href="#" data-toggle="tooltip" title="Sticky Home" class="sticky-thread-home collapse "><span class="icon" data-icon="G"></span>
+                              </a>  
+                              <a href="#" class="close-thread " data-toggle="tooltip" title="Close">
+                                 <span class="icon" data-icon="("></span>
+                              </a>
+                              <a href="#" class="unclose-thread collapse" data-toggle="tooltip" title="Unclose">  <span class="icon" data-icon=")"></span>
+                              </a>
+                              <a href="#" class="delete-thread" data-toggle="tooltip" title="Delete">
+                                 <span class="icon" data-icon="#"></span>
+                            </a>
+                               
+                       </div>
+                  </div>
+                  </div>
+                  </div>
+    
+      </li>
+
+      <li class="Post" data-id="3" data-cat="localization">
+             <div class="col-md-1">
+             <div class="row"> 
+            <input type="hidden" value="localization" class="">              
+            <a href="postPage.html">           
+                  <img src="avatars/3.png"  class="avatar" alt="">             
+            </a>
+       </div>
+       </div>
+       <div class="row"> 
+         <div class="col-md-8">
+        
+                <div class="">   
+                    <h2 class="title">              
+                       <a href="postPage.html">
+EngineThemes’ updates: JobEngine, QAEngine, ForumEngine</a>
+                    </h2>                          
+                 
+                  <div class="post-information">
+                      <span class="times-create">Updated 7 days ago in</span>
+                      <span class="type-category">
+                          <a href=""><span class="flags2 color-3"></span> Customizing</a>
+                      </span>                      
+                      <span class="author"> No reply yet </span>
+                       
+                      <span class="user-action">
+                          <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>                   0
+                          <span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0
+                      </span>
+
+                          <span class="undo-action hide">Want to
+                             <a href="#" class="act-undo">undo</a> ?       
+                          </span>
+
+                       </div> 
+
+                        <div class="control-thread-group">
+
+                              <a href="#" data-toggle="tooltip" title="Sticky" class="sticky-thread ">
+                                <span class="icon" data-icon="S"></span>
+                              </a>
+                              <a href="#" data-toggle="tooltip" title="Sticky Home" class="sticky-thread-home collapse "><span class="icon" data-icon="G"></span>
+                              </a>  
+                              <a href="#" class="close-thread " data-toggle="tooltip" title="Close">
+                                 <span class="icon" data-icon="("></span>
+                              </a>
+                              <a href="#" class="unclose-thread collapse" data-toggle="tooltip" title="Unclose">  <span class="icon" data-icon=")"></span>
+                              </a>
+                              <a href="#" class="delete-thread" data-toggle="tooltip" title="Delete">
+                                 <span class="icon" data-icon="#"></span>
+                            </a>
+                               
+                       </div>
+                  </div>
+                  </div>
+                  </div>
+    
+      </li>
+
+      <li class="Post" data-id="4" data-cat="localization">
+             <div class="col-md-1">
+             <div class="row"> 
+            <input type="hidden" value="localization" class="">              
+            <a href="postPage.html">           
+                  <img src="avatars/4.png"  class="avatar" alt="">             
+            </a>
+       </div>
+       </div>
+       <div class="row"> 
+         <div class="col-md-8">
+        
+                <div class="">   
+                    <h2 class="title">              
+                       <a href="postPage.html">DirectoryEngine v1.8.6 now supports responsive header menu</a>
+                    </h2>                          
+                 
+                  <div class="post-information">
+                      <span class="times-create">Updated 7 days ago in</span>
+                      <span class="type-category">
+                          <a href=""><span class="flags2 color-4"></span> Getting Started</a>
+                      </span>                      
+                      <span class="author"> No reply yet </span>
+                       
+                      <span class="user-action">
+                          <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>                   0
+                          <span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0
+                      </span>
+
+                          <span class="undo-action hide">Want to
+                             <a href="#" class="act-undo">undo</a> ?       
+                          </span>
+
+                       </div> 
+
+                        <div class="control-thread-group">
+
+                              <a href="#" data-toggle="tooltip" title="Sticky" class="sticky-thread ">
+                                <span class="icon" data-icon="S"></span>
+                              </a>
+                              <a href="#" data-toggle="tooltip" title="Sticky Home" class="sticky-thread-home collapse "><span class="icon" data-icon="G"></span>
+                              </a>  
+                              <a href="#" class="close-thread " data-toggle="tooltip" title="Close">
+                                 <span class="icon" data-icon="("></span>
+                              </a>
+                              <a href="#" class="unclose-thread collapse" data-toggle="tooltip" title="Unclose">  <span class="icon" data-icon=")"></span>
+                              </a>
+                              <a href="#" class="delete-thread" data-toggle="tooltip" title="Delete">
+                                 <span class="icon" data-icon="#"></span>
+                            </a>
+                               
+                       </div>
+                  </div>
+                  </div>
+                  </div>
+    
+      </li>
+
+      <li class="Post" data-id="5" data-cat="localization">
+             <div class="col-md-1">
+             <div class="row"> 
+            <input type="hidden" value="localization" class="">              
+            <a href="">           
+                  <img src="avatars/5.png"  class="avatar" alt="">             
+            </a>
+       </div>
+       </div>
+       <div class="row"> 
+         <div class="col-md-8">
+        
+                <div class="">   
+                    <h2 class="title">              
+                       <a href="">How to integrate new Payment Gateway into JobEngine & ClassifiedEngine </a>
+                    </h2>                          
+                 
+                  <div class="post-information">
+                      <span class="times-create">Updated 7 days ago in</span>
+                      <span class="type-category">
+                          <a href=""><span class="flags2 color-5"></span> Currencies</a>
+                      </span>                      
+                      <span class="author"> No reply yet </span>
+                       
+                      <span class="user-action">
+                          <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>     0              
+                          <span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0
+                      </span>
+
+                          <span class="undo-action hide">Want to
+                             <a href="#" class="act-undo">undo</a> ?       
+                          </span>
+
+                       </div> 
+
+                        <div class="control-thread-group">
+
+                              <a href="#" data-toggle="tooltip" title="Sticky" class="sticky-thread ">
+                                <span class="icon" data-icon="S"></span>
+                              </a>
+                              <a href="#" data-toggle="tooltip" title="Sticky Home" class="sticky-thread-home collapse "><span class="icon" data-icon="G"></span>
+                              </a>  
+                              <a href="#" class="close-thread " data-toggle="tooltip" title="Close">
+                                 <span class="icon" data-icon="("></span>
+                              </a>
+                              <a href="#" class="unclose-thread collapse" data-toggle="tooltip" title="Unclose">  <span class="icon" data-icon=")"></span>
+                              </a>
+                              <a href="#" class="delete-thread" data-toggle="tooltip" title="Delete">
+                                 <span class="icon" data-icon="#"></span>
+                            </a>
+                               
+                       </div>
+                  </div>
+                  </div>
+                  </div>
+    
+              </li>
+	</ul>
+        </div>
+       
+<!-- POST -->
+    </div>
+<!-- LEFT SIDE -->
+ 
+   </div>
+   </div>
+   </div>
+ <!-- CONTAINER -->
+
+
+
+
+<!-- FOOTER	-->	
+
+		<div class="col-md-12">
+            <div class="footer">
+		      <div class="container">
+		     
+		        <div class="col-md-3">
+			       <a target="_blank" href="http://www.demo.enginethemes.com/forumengine/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+			    </div>	
+
+			    <div class="col-md-9 row"> 
+			       <span class="FloatRight WordPress">	  	
+				      <a href="//www.enginethemes.com/themes/forumengine/" target="_blank">WordPress Forum Theme</a>
+				      <span>- Powered by WordPress</span>	
+			       </span>         			  	
+			    </div>
+	                
+		      </div>
+	        </div>
+	     </div>
+	            			  		
+					  		
+<!-- FOOTER	-->					 
+			
+
+
+
+      </div>
+   </div>
+      
+
+
+                     
+
+                      
+
+  
+
+   
+ 
+
+
+
+
+
+                  </div>
+             </div>
+         </div>
+
+
+
+
+
+
+        
+
+          
+       
+    
+   
+    
+
+                               
+
+                    
+                                            
+
+                                  
+    
+
+          
+
+                                                        
+                  
+
+                       
+                             
+                      
+                   
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(".input-group").click(function(){
+$("#Please").removeClass("display");
+});
+$(".input-group").click(function(){
+$(".hero-unit").slideDown ();
+});
+$(".close").click(function(){
+ $(".hero-unit").slideUp();
+  $("#Please").addClass("display");
+});
+
+$('.dropdown-toggle').dropdown();
+
+//   $(window).scroll(function () { 
+//    if ($(window).scrollTop() >= $(document).height() - $(window).height() ) {
+//    alert("gfdghsg");}  
+// });
+});
+
+
+</script>
+
+
+
+<script src="lib/js/wysihtml5-0.3.0.js"></script>
+<script src="lib/js/jquery-1.7.2.min.js"></script>
+<script src="lib/js/prettify.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script src="src/bootstrap-wysihtml5.js"></script>
+
+<script>
+  $('.textarea').wysihtml5();
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+  $(prettyPrint);
+</script>        
+              
+
+<script src="js/jquery-2.2.1.js">
+ $('#myModal').on('shown.bs.modal', function () {
+ $('#myInput').focus();
+});   
+</script>
+
+
+<script src="js/bootstrap.min.js"> 
+function AutoComp(){
+  var a =document.getElementById('MySearch').autocomplate;             
+   }           
+};
+</script>
+
+  </body>
+</html>

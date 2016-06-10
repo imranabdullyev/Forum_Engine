@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>ForumEngine</title>
+
+      <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="lib/css/prettify.css"></link>
+      <link rel="stylesheet" type="text/css" href="src/bootstrap-wysihtml5.css"></link>
+
+      <!-- Normalise css -->
+      <link rel="stylesheet" href="scss/normalise.css">
+       <!-- Bootstrap css -->
+      <link rel="stylesheet" href="scss/bootstrap.css">
+      <!-- FornAwesome css -->
+      <link rel="stylesheet" href="scss/font-awesome.css">
+        
+       <!-- Style csss-->
+      <link rel="stylesheet" href="scss/responsive.css">
+      <link rel="stylesheet" type="text/css" href="scss/style.css">
+
+     <!--Jquery Script -->     
+       <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+        
+       <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30181385-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      </script>
+     
+      </head>
+      <body>
+
+<!-- NAVBAR -->
+
+
+         <nav class="navbar1 navbar-default ">
+
+                 <div class=" container  ">
+                      <div class="row ">
+
+ <!-- LOGO -->
+                            <div class="col-md-2 logo-header ">
+                                      <a href="" class="logo"><img src="images/logo.png"></a>  
+                            </div>
+<!--- LOGO -->
+
+<!-- SEARCH -->
+                            <div class="col-md-7 col-md-offset-1">
+                                  <form class="navbar-form navbar-left  " role="search">
+                                        <div class="form-group">
+
+                                             <input type="search" id="MySearch" class=" form-control" placeholder="Search...">                              
+                                             <button type="submit" class="btn1 " style="margin: 0 20px;">
+                                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                             </button>    
+                                          </div> 
+                                  </form> 
+                             </div>
+<!-- SEARCH -->  
+
+<!-- LOG IN OR JOIN -->
+                             <div class="col-md-2">
+                                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                  <a data-toggle="modal" data-target="#myModal" class="LogIn waves-effect waves-light modal-trigger" href="#modal1"> Log in or join</a>
+                             </div>      
+
+
+                    <!-- MODAL --> 
+                            
+                              <div class="col-md-12 ">
+                                   <div class="row">  
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog1  modal-dialog" role="document">
+
+                                            
+                                             <div class="modal-content1">
+                                              
+
+                                             <!-- baglama -->
+                                                  <div class="clr">
+                                                     <button type="button" class="close bumi" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i>
+                                                     </button>
+                                                  </div>
+
+                                             <!-- baglama -->
+
+
+                                <!-- ModalContent -->
+
+                                                  <div class="cont"  >
+
+                                             <!--    header    -->
+
+                                                  <div class="modal-header1">      
+                                                       <h4 class="modal-title" id="myModalLabel">Log in or Join</h4>
+                                                  </div>
+
+                                             <!--    header    -->      
+
+                                             <!--  ModalBody  -->
+                                             <div class="row" >
+                                                  <div class="modal-body1">
+                                                               
+                                            <!-- RightForm -->
+                                                  <form class="col-md-6 LeftBorder  ">  
+                                                                 
+                                                      <div class="input-field1 ">  
+                                                           <input id="icon_email" type="tel" class="input validate" placeholder="Enter your username or email" >
+                                                      </div>
+
+                                                       <div class="input-field1">
+                                                           <input id="password" type="password" class="input validate" placeholder="Password" >
+                                                       </div>
+                                                
+                                                      <div class="forgotten-pass">
+                                                            <a href="#">Forgotten password?</a>
+                                                            <button type="button" class="btn1 LoginJoinBtn FloatRight ">Login
+                                                            </button>
+                                                       </div>
+                                                       <p>You can also sign in by:</p>
+                                                              
+                                                  </form>
+                                             <!-- RightForm -->
+
+
+                                             <!-- LeftForm -->
+                                                  <form class="col-md-6 ">
+                                                       <div class="input-field1 ">  
+                                                            <input id="icon_email" type="tel" class="input validate" placeholder="Username" >
+                                                        </div>
+
+                                                        <div class="input-field1">
+                                                             <input id="Email" type="Email" class="input validate" placeholder="Email" >
+                                                       </div>             
+
+                                                       <div class="input-field1">
+                                                            <input id="password" type="password" class="input validate" placeholder="Password" >
+                                                       </div>
+
+                                                        <div class="input-field1">
+                                                             <input id="password-rep" type="password" class="input  validate" placeholder="Retype password">
+                                                        </div>
+
+                                                       <div class="agreement">
+                                                             <input type="checkbox" value=""><span style="padding: 5px;">I agree to <a href="#">the terms.</a></span>
+                                                              
+                                                            <button type="button" class="btn1 FloatRight LoginJoinBtn ">Join 
+                                                            </button>
+                                                       </div>    
+
+                                                  </form>                   
+                                             <!-- LeftForm -->                   
+                                        </div> 
+                                   </div>                    
+                              <!--  ModalBody  -->                          
+                         </div>                               
+                         <!-- ModalContent -->   
+                            </div>
+                           </div>
+                         </div>
+                        </div>
+                      </div> 
+
+     <!-- MODAL -->                         
+
+
+                                               
+     <!-- LOG IN OR JOIN  -->   
+
+                      </div>
+                 </div>  
+             </div>             
+         </nav>                           
+                                
+                                                         
+<!--NAVBAR1 -->     
+
+
+                                    
+<!-- SecondNav -->
+                      
+         <nav class="navbar-default navbar2">
+               <div class=" container ">
+                   <div class="row ">
+                       <div class="" style="padding: 0;">
+
+                           <ul class="postPage_list  navbar-nav">
+                               <li class="">
+                               <i class="fa fa-home" aria-hidden="true"></i>
+                                     <a href="ForumEngine.html">
+                                       <span class="text">Home</span>  
+                                   </a>                                 
+                               </li>
+                                <li>
+                                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                     <a href="Categories.html">                                         
+                                         <span class="text">Localization</span>
+                                   </a>                                   
+                               </li>
+                               <li > 
+                                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>                            
+                                 <span class="text">Other updates: DirectoryEngine, FreelanceEngine and ClassifiedEngine</span>
+                               </li>                                     
+                          </ul>
+
+                       </div>
+                 </div>
+             </div>
+         </nav>
+
+<!--  SecondNav -->
+
+
+                                        
+<!--  Container   -->
+
+  <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+           <!-- LeftSide --> 
+		 <div class="col-md-9">
+
+		<!-- Posts --> 
+        <div class="row" style="margin-top:18px;">  
+            <div class="col-md-9">
+                   <div class="titlePost">   
+                      <h2 class="title">              
+                           <a href="">Introducing new packages for DirectoryEngine and FreelanceEngine </a>
+                      </h2>                          
+                     
+                      <div class="post-information">
+                          <span class="times-create">Updated 7 days ago in </span>
+                          <span class="type-category">
+                              <a href=""><span class="flags2 color-1"> </span> Localization</a>
+                          </span>
+                      </div>
+                   </div>
+                   </div>
+
+              <div class="col-md-3">
+                    <div class="FollowCase">
+                       <a href="" style="float:right;">
+                          <i class="fa fa-minus" aria-hidden="true"></i><span>Unfollow</span>         
+                       </a>
+                    </div>
+              </div>
+        </div> 
+
+                  <div id="main_list_post2">
+
+                      <div  class="col-md-1" data-id="1" data-cat="localization">
+                            <a href=""><img src="avatars/1.png"  class="avatar" alt=""></a>
+                      </div>      
+
+                      <div class="col-md-11">
+                      <div class="PostTitle">   
+                        <h2 class="title" style="padding-left: 15px;">              
+                           <a href="">Introducing new packages for DirectoryEngine and FreelanceEngine</a>
+                             <span class="user-action FontSize">
+                               <span class="comment "><i class="fa fa-comment" aria-hidden="true"></i></span>0<span class="like "><i class="fa fa-heart" aria-hidden="true"></i></span>0             
+                               <span class="times-create"> on May, 2015 </span>
+                             </span>
+                           
+                       </h2>                   
+                     </div>
+                     <div class="content">
+              				<p>We are so grateful to receive a lot of support and questions asking about our
+              				   <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				   </a> from you guys in the previous weeks.</p>
+              				<p>Finally… the time has come!</p>
+              				<p>EngineThemes is excited to announce the release of our beautiful and elegant wedding theme: 
+              				  <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				  </a>.
+              				</p>
+              				<p>This wedding theme is built for couples to create their personalized wedding websites easily and quickly. 
+              				  <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				  </a> is a One Page WordPress theme that features unique sections made just for weddings. Visit Demo <a href="https://enginethemes.com/demo/weddingengine/" target="_blank" rel="nofollow"><b>here</b>
+              				  </a> to see all the features!</p>
+              				<p><b>WeddingEngine Special Offer</b></p>
+              				<p>In order to share the joy and love on the day 
+              				  <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				  </a> launches, we are happy to bring you a special offer:
+              				</p>
+              				<ol>
+              				  <ul> 				 
+              				    <li>From May 12 to May 22, when you purchase a single
+              				       <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				       </a> theme, you will receive a free installation package.
+              				     </li>
+              				    </ul> 				   
+              				</ol>
+              				<ol>	
+              				<ul>			
+              				    <li>To anyone, who purchases 
+              				      <a href="https://www.enginethemes.com/themes/weddingengine/" target="_blank" rel="nofollow"><b>WeddingEngine</b>
+              				      </a> with a hosting package, we will rebate you $20 (equivalent to an installation package).
+              				    </li>				
+              				</ul>
+              				</ol>
+              				<p>We know that you will have a ton of works for your big day so let’s give you a hand. From just $49, you can have your very own personalized wedding website. Nothing is sweeter than that!</p>
+  		             </div>
+                      <div class="Reply">
+                      	<span >Reply <i class="fa fa-share-square-o" aria-hidden="true"></i></span>
+                      </div>
+                      </div>
+		         </div>
+		      	
+            			 	      
+		       <div  class="topBorder" data-id="3" data-cat="localization">
+        		        <div class="col-md-1 marginleft">             
+        			      <a href=""><img src="avatars/1.png"  class="avatar" alt=""></a>
+        			   </div>
+			 
+                    <!-- Input-group -->
+			           
+			             <div class="col-md-11 ">                			                         
+			                        <form action="" method="post">
+			                            <div class="input-group Replyİnput">                          
+			                                 <input type="text" class="form-control" placeholder="Click here to start your discussion">   
+			                            </div>
+			                        </form>
+ 
+			                       <!-- hero-unit display -->
+			                            <div class="hero-unit2 display" >  
+
+			                                 <textarea class=" textarea" ></textarea> 
+			                                 <div class="col-md-12">
+			                                    <div class="row margin">
+
+			                                       <div class="col-md-6">
+			                                            <div class="show-preview" style="margin-top:10px;">                                   
+			                                                 <input type="checkbox" name="show_preview" class="   checkbox-show" id="show_topic_item">
+			                                                 <a href="#">Show preview</a>
+			                                            </div>
+			                                       </div>
+						
+			                                       <div class="col-md-6" style="padding: 0px; ">             
+			                                           <div class="button-event" style="height: 40px;">                                            
+			                                              <button type="button" class="btn2 " data-toggle="modal" data-target="#myModal" href="#modal1" type="submit" id="btn-create"  >Reply
+			                                              </button>
+			                                              <div class="closer close">
+			                                              <button type="button" class=" close bumi2 margin"><i class="fa fa-times" aria-hidden="true"></i>
+			                                              </button><span class="cancel" >Cancel</span>
+			                                           </div>                                            
+			                                        </div>
+
+			                                    </div>
+			                                 </div>
+
+			                            </div>		                        
+			                       <!-- hero-unit display -->                                            
+
+			
+			              </div>
+			             
+			        
+		    <!--Input-group -->
+
+		             
+			   </div>
+   
+         </div>
+		           
+		<!-- POST -->
+		    </div>
+	<!-- LEFT SIDE -->
+
+		  
+	
+	<!-- RightSide -->
+
+		<div class="col-md-3">
+
+                <!-- PEOPLE IN THIS DISCUSSION -->
+		               <div class="widget postPageWidget margin user-wg">
+		                  <h2 class="widgettitle">PEOPLE IN THIS DISCUSSION</h2>
+		                  <div class="hot-user-topic"> 
+		 	                <a href="">           
+		                        <img src="avatars/1.png"  class="avatar" alt="">             
+		                      </a>
+		                  </div>  
+		               </div>  
+                 <!-- PEOPLE IN THIS DISCUSSION -->
+
+
+                             <!-- RELATED TOPICS -->
+		               <div class="widget  margin user-wg">
+		                  <h2 class="widgettitle">RELATED TOPICS</h2>
+		                  <div class="hot-user-topic">
+		                    <ul>                      
+		                       <li>                            
+		                            <span class="number color-12">1</span>
+		                            <div class="UserText""><a href="http://www.demo.enginethemes.com/forumengine/thread/8888rr/">DirectoryEngine v1.8.6 now supports responsive header menu</a>
+		                            </div>		                         
+		                       </li>                                  
+		                      <li>                          
+		                         <span class="number color-12">2</span>
+		                         <div class="UserText">
+		                         <a href="http://www.demo.enginethemes.com/forumengine/thread/new-packages-directoryengine-and-freelanceengine/"> Other updates: DirectoryEngine, FreelanceEngine and ClassifiedEngine </a>
+		                         </div>                       
+		                     </li>                          
+		                      <li>                          
+		                         <span class="number color-5">3</span>
+		                         <div class="UserText">
+		                         <a href="http://www.demo.enginethemes.com/forumengine/thread/new-packages-directoryengine-and-freelanceengine/">DirectoryEngine v1.8.6 now supports responsive header menu</a>
+		                         </div>                       
+		                      </li>                          
+		                      <li>                          
+		                         <span class="number color-5">4</span>
+		                         <div class="UserText">
+		                         <a href="http://www.demo.enginethemes.com/forumengine/thread/new-packages-directoryengine-and-freelanceengine/">EngineThemes’ updates: JobEngine, QAEngine, ForumEngine</a>
+		                         </div>                       
+		                      </li>                          
+		                  
+		                      <li>                          
+		                         <span class="number color-9">5</span>
+		                         <div class="UserText">
+		                           <a href="http://www.demo.enginethemes.com/forumengine/thread/new-packages-directoryengine-and-freelanceengine/">Introducing new packages for DirectoryEngine and FreelanceEngine</a>
+		                         </div>                       
+		                     </li>                         
+		                   </ul>
+		                </div>
+		               </div>
+                             <!-- RELATED TOPICS -->
+
+		</div> 
+	<!-- RightSide -->
+	<!-- col-md-3 -->
+
+   </div>
+   </div>
+</div>
+
+ <!-- CONTAINER -->
+
+
+
+
+<!-- FOOTER	-->	
+
+		<div class="col-md-12">
+            	    <div class="footer">
+		      <div class="container">
+		     
+		        <div class="col-md-3">
+			       <a target="_blank" href="http://www.demo.enginethemes.com/forumengine/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+			    </div>	
+
+			    <div class="col-md-9 row"> 
+			       <span class="FloatRight WordPress">	  	
+				      <a href="//www.enginethemes.com/themes/forumengine/" target="_blank">WordPress Forum Theme</a>
+				      <span>- Powered by WordPress</span>	
+			       </span>         			  	
+			    </div>
+	                
+		      </div>
+	        </div>
+	     </div>
+	            			  		
+					  		
+<!-- FOOTER	-->					 
+
+
+
+      </div>
+   </div>
+      
+
+
+                     
+
+                      
+
+  
+
+   
+ 
+
+
+
+
+
+                  </div>
+             </div>
+         </div>
+
+
+
+
+                       
+                             
+                      
+                   
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+   $(".input-group, .Reply ").click(function(){
+   $(".input-group").addClass("display");
+    $(".hero-unit2").slideDown ();
+   $(".close").click(function(){
+   $(".hero-unit2").slideUp( "slow", function() {
+   $(".input-group").removeClass("display");});
+    });
+   });
+
+ 
+
+  
+
+});
+
+</script>
+
+
+
+<script src="lib/js/wysihtml5-0.3.0.js"></script>
+<script src="lib/js/jquery-1.7.2.min.js"></script>
+<script src="lib/js/prettify.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script src="src/bootstrap-wysihtml5.js"></script>
+
+<script>
+  $('.textarea').wysihtml5();
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+  $(prettyPrint);
+</script>        
+              
+
+<script src="js/jquery-2.2.1.js">
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus();
+ });   
+
+
+</script>
+
+
+
+</body>
+</html>
+

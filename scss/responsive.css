@@ -1,0 +1,57 @@
+@media (max-width: 1200px) {
+	#header .container .headerReklam {
+		display: none;
+	}
+}
+@media (max-width: 1000px) {
+	#header .container {
+		display: none;
+	}
+	#categories .container{
+		padding-bottom: 10px !important;
+	}
+	#categories .container .logo {
+		margin-top: 15px !important;
+		margin-left: 5px !important;
+		width: 122px !important;
+		height: 27px !important;
+	    background-image: url(../images/sprite.svg);
+	    background-repeat: no-repeat;
+	    background-position: 0px -38px !important;
+	}
+	.catNav, .otherNav {
+		display: none;
+	}
+	.lang-select {
+		display: block !important;
+	}
+}
+@media (max-width: 780px){
+	#lastVac .container .headListLastVac .rightHead ,#lastVac .container .headListLastVac .leftHead a {
+		display: none;
+		visibility: hidden;	
+	}
+	#lastVac .container .headListLastVac .leftHead {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.mobile, .widgets, .quote, .tabCategoriesCompanies {
+		display: none;
+	}
+	#lastVac .container .headListLastVac .leftHead h1 {
+		font-size: 25px !important;
+	}
+	#footer .container .row .col-md-4 .footNav {
+		float: left;
+	}
+	#footer .container .row .col-md-4 .footInfo{
+		float: right;
+	}
+	#footer .container .row .col-md-4 .copyright {
+		clear: both;
+	}
+	#footer .container .row .col-md-4 .footCatList , #footer .container .row .col-md-4 a.title{
+		display: none;
+		visibility: hidden;
+	}
+}

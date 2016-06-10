@@ -1,0 +1,607 @@
+$GraynavColor: #4F4F4F;
+
+$Black:#000;
+$Orange:  #e64b21;
+$fontSize:12px;
+
+body{
+
+		box-sizing: border-box;
+		font-family: Open Sans, Arial, Helvetica, sans-serif;
+        
+           		.FloatRight{
+           			float:right;
+           		}
+           		.FloatLeft{
+           			float:left;
+           		}
+
+
+		.col-md-9{
+
+			padding-left:0 !important;
+
+		}
+
+
+		.btn1{
+			border-radius: 4px;
+			color:white;
+			border: none;
+			width: 90px !important;
+			height: 40px !important ;
+			background-color: $Orange;
+		   }
+
+
+	 
+	          .LoginJoinBtn{
+
+	         			 font-size:14px;
+	          		witdh:98px !important;
+	          }
+
+	 	
+
+		 .btn1:hover{
+			background-color:  		#eb6b47 !important;
+		          }
+
+
+	
+
+		.container {
+	   	 	max-width: 960px !important;    
+		}
+
+
+/********   NAVBAR  *******/
+		.navbar1 {
+
+		background-color: $GraynavColor;
+		height: 70px;
+		width: 100%;
+	          
+
+	          .logo-header{
+
+	          	padding:0 !important;
+
+	          }
+
+	           .logo img {
+
+			margin-top: 15px !important;
+
+	           }
+
+		.navbar-left {
+			padding: 5px 0 !important;
+			border-right: 1px solid $Black;
+
+
+		
+
+		.form-control{
+
+			width: 395px !important;
+			height: 40px !important
+		          }
+
+		
+
+		.btn1:hover{
+			background-color:  #cf3f17 !important
+		}
+
+
+		    }
+
+			
+		.LogIn{
+			font-size:$fontSize !important;
+			line-height: 70px;
+			color: #a5a9ac;
+
+		  }
+
+
+		.fa-sign-in{
+
+			padding: 0 5px;
+			color:gray;
+		}
+
+
+
+		}
+
+/********   NAVBAR  *******/
+
+
+
+/********   MODAL  *******/
+
+
+		.modal-dialog{
+			width:720px !important;	
+			margin-left:316px !important;
+			border-top:4px solid $Orange ;
+
+		}
+
+		.modal-content{
+
+			height:460px !important;
+			border:1px solid #ecf0f1;
+		 	border-radius:0px ;
+			background-color:#ecf0f1;	
+			
+
+
+		.bumi{
+			opacity:3 !important;
+			line-height:23px !important;
+			margin:5px 5px 0 0;
+			color:#fff;
+			width:23px;
+			height:23px;
+			border-radius:100%;
+			background-color:#7b7b7b !important;
+
+	 	}
+
+	 
+	 	.modal-header{
+
+	 		width:720px !important;
+	 		font-size:$fontSize !important;
+	 		
+	 		
+
+
+	 		 h4{
+
+	 			font-size:14px !important;
+	 			padding-bottom:15px;
+	 			margin:60px 40px 5px 40px !important;
+	 			border-bottom: 1px solid #e5e5e5;
+
+	 		}
+ 		
+	 	}
+
+	 		.modal-body{
+
+	 			padding:0 55px  !important;
+	 			height:310px !important;
+
+	 		}
+
+	 			
+			.modal-body p{
+
+				margin-top:80px;
+	 			color: gray;
+	 			font-size:$fontSize !important;
+
+			}
+
+			.input-field{
+
+				margin:20px 0;
+
+
+		
+
+			input{
+			            font-size:$fontSize !important;
+				width:288px;
+				height:35px;
+				padding:10px;
+				border:none;
+
+		             }
+
+
+		
+		}
+
+     }
+		.LeftBorder{
+
+			border-right: 1px solid #e5e5e5;
+		}
+
+     	
+
+
+		.forgotten-pass a{
+
+			color: gray; 
+			font-size:12px;
+			line-height:40px;
+			margin-left:75px;
+
+		}
+
+		.agreement{
+
+			color: gray;
+	 		font-size:$fontSize !important;
+			line-height:40px !important;
+
+
+		}
+
+		
+
+
+
+/******* MODAL ********/
+
+
+/******* NAVBAR2 ******/
+
+		.navbar2{
+
+			height:45px;
+			background: #F2F2F2;
+    			color: #999999;
+
+		}
+
+		.actives{
+			background-color:#fff;
+			height:43px;
+			border-top:5px solid $Orange;
+			padding:0 
+			!important;
+
+		}
+
+/******* NAVBAR2 ******/
+
+
+/******* CONTAINER ******/
+
+
+/******* LEFTCONTAINER ******/
+		    
+
+
+		.InputForTopic{
+
+			width:525px;
+			height:47px;			
+			font-size: 12px;
+
+		}
+
+		.ForTopicBtn{
+
+			font-size: 12px;
+  			border:1px solid #ccc;
+  			border-left:none;
+			vertical-align: middle;
+			background-color:transparent;
+			color:#333;
+			width:176px;
+			height:47px;
+
+		}
+
+		.text-select{
+			padding:0 5px;
+
+			}
+
+		.WellHeader{
+			 
+			width:100%;
+			height: 36px;	
+			background-color: #f5f5f5;
+			border: 1px solid #e3e3e3;
+		 		
+		}
+
+		 .btn.jumbo {
+		        font-size: 20px;
+		        font-weight: normal;
+		        padding: 14px 24px;
+		        margin-right: 10px;
+		        -webkit-border-radius: 6px;
+		        -moz-border-radius: 6px;
+		        border-radius: 6px;
+		        
+		      }
+
+
+/*****POST*****/
+		      .PostList{
+
+			margin-top:20px;
+			padding-top:20px;
+			border-top:1px solid #f0f0f0;
+			list-style:none;
+
+			.Post{
+			padding:14px 17px !important;
+			
+
+			h2{
+			margin:0 !important;
+				
+			}
+
+			h2 a {
+			font-size:16px;			
+			color:black;
+			font-size:14px;
+
+			}}
+
+
+		}
+
+			.post-information{
+
+			color:#b3b3b3;
+
+			}
+
+		     	 .avatar{
+
+		      	border-radius:100%
+
+/*****POST*****/
+		      }
+
+
+/******* LEFTCONTAINER ******/
+
+
+
+
+/******* RIGHTCONTAINER ******/
+		    
+		
+		.widget{width:214px;}
+
+		.widget h2 {
+		    font-size:12px;
+		    color: #636267;
+		    text-transform: uppercase;
+		    border-bottom: 1px solid #f0f0f0;
+		    margin-top: 10px;
+		    padding-bottom: 13px;
+		    margin-bottom: 9px;
+		}
+
+
+		.list-group-item{
+		font-size:16px;
+		text-transform: uppercase;
+		color: #7b7b7b;    
+		border:none;
+		border-top:1px solid  #e6e6e6; 
+		background-color:#f0f0f0 ;
+
+		}
+		.numbers{
+		    	font-size: 24px;
+		    	font-weight: 600;
+	    	}
+
+		.list1{    border-top: none;}
+
+		.category-items{
+			font-size: 12px;
+			list-style:none;
+}
+		.category-items li {
+			
+			padding:5px 25px 5px 30px !important;
+
+	                 a{color:#95A5A6;}
+
+			 a:hover{
+			 color:red;
+			 text-decoration: none;
+			}
+
+			.flags{
+			    width: 12px;
+			    height: 12px;
+			    display:inline-block;
+			    top: 3px;
+    			    right:-12px;
+   			    position: relative;
+			    float:right;
+			    margin:0 !important;
+			    border-radius: 1px;
+			}	
+
+.flags.color-1{
+	background: #1abc9c;
+}
+
+.flags.color-2 {
+	background: #3498db;
+}
+
+.flags.color-3 {
+	background: #be8cbc;
+}
+
+.flags.color-4, .sticky-bar.color-4{
+	background: #a4bedf;
+}
+
+.flags.color-5, .sticky-bar.color-5{
+	background: #fff146;
+}
+
+.flags.color-6, .sticky-bar.color-6{
+	background: #e67e22;
+}
+
+.flags.color-7, .sticky-bar.color-7{
+	background: #4e6c8a;
+}
+
+.flags.color-8, .sticky-bar.color-8{
+	background: #9fd4a9;
+}
+	
+.flags.color-9, .sticky-bar.color-9{
+	background: #68d0f0;
+}
+
+.flags.color-10, .sticky-bar.color-10{
+	background: #bdc3c7;
+}
+
+.flags.color-11, .sticky-bar.color-11{
+	background: #16a085;
+}
+
+.flags.color-12, .sticky-bar.color-12{
+	background: #2980b9;
+}
+
+.flags.color-13, .sticky-bar.color-13{
+	background: #a286ba;
+}
+
+.flags.color-14, .sticky-bar.color-14{
+	background: #8dbdd8;
+}
+
+.flags.color-15, .sticky-bar.color-15{
+	background: #f5c506;
+}
+
+.flags.color-16, .sticky-bar.color-16{
+	background: #d35400;
+}
+
+.flags.color-17{
+	background: #34495e;
+}
+.nav-link .tax-17.active {
+	border-top: 5px solid #34495e !important;
+}
+.flags.color-18, .sticky-bar.color-18{
+	background: #60bf74;
+}
+.	border-top: 5px solid #60bf74 !important;
+}
+.flags.color-19, .sticky-bar.color-19{
+	background: #00b2d7;
+}
+
+.flags.color-20, .sticky-bar.color-20{
+	background: #00b2d7;
+}
+
+.flags.color-21, .sticky-bar.color-21{
+	background: #2ecc71;
+}
+
+.flags.color-22, .sticky-bar.color-22{
+	background: #0078a0;
+}
+
+.flags.color-23, .sticky-bar.color-23{
+	background: #9b59b6;
+}
+
+.flags.color-24, .sticky-bar.color-24{
+	background: #8fd7d4;
+}
+
+.flags.color-25, .sticky-bar.color-25{
+	background: #ec9e03;
+}
+
+.flags.color-26, .sticky-bar.color-26{
+	background: #e74c3c;
+}
+
+.flags.color-27, .sticky-bar.color-27, .tax-item.color-27 > .container .cursor span{
+	background: #2c3e50;
+}
+
+.flags.color-28, .sticky-bar.color-28, .tax-item.color-28 > .container .cursor span{
+	background: #12a252;
+}
+
+.flags.color-29, .sticky-bar.color-29, .tax-item.color-29 > .container .cursor span{
+	background: #0090b0;
+}
+
+.flags.color-30, .sticky-bar.color-30, .tax-item.color-30 > .container .cursor span{
+	background: #7f8c8d;
+}
+
+.flags.color-31, .sticky-bar.color-31, .tax-item.color-30 > .container .cursor span{
+	background: #27ae60;
+}
+
+.flags.color-32, .sticky-bar.color-32, .tax-item.color-30 > .container .cursor span{
+	background: #004c7d;
+}
+
+.flags.color-33, .sticky-bar.color-33, .tax-item.color-30 > .container .cursor span{
+	background: #8e44ad;
+}
+
+.flags.color-34, .sticky-bar.color-34, .tax-item.color-30 > .container .cursor span{
+	background: #6ba5a3;
+}
+
+.flags.color-35, .sticky-bar.color-35, .tax-item.color-30 > .container .cursor span{
+	background: #f99138;
+}
+
+.flags.color-36, .sticky-bar.color-36, .tax-item.color-30 > .container .cursor span{
+	background: #c0392b;
+}
+
+.flags.color-37, .sticky-bar.color-37, .tax-item.color-30 > .container .cursor span{
+	background: #212f3d;
+}
+
+.flags.color-38, .sticky-bar.color-38, .tax-item.color-30 > .container .cursor span{
+	background: #24753c;
+}
+
+.flags.color-39, .sticky-bar.color-39, .tax-item.color-30 > .container .cursor span{
+	background: #004350;
+}
+
+
+
+		}
+
+
+	
+
+			
+
+	
+
+
+
+
+/******* RIGHTCONTAINER ******/
+
+
+/******* CONTAINER ******/
+
+
+
+
+       
+
